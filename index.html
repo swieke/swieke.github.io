@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <!-- Google font -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <style>
+        @font-face {
+            font-family: "BasicCommercial";
+            src: url("./styles/BasicCommercial_LT_Black.ttf");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #fafaf6;
+        }
+
+        a:hover, a:visited, a:link, a:active
+        {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: line-through;
+        }
+
+        div.block {
+            position: fixed;
+            top: 60px;
+            right: 60px;
+            font-family: "BasicCommercial";
+            font-size: 18px;
+            color: #181818;
+            z-index: 10;
+
+        }
+        
+        div.opening {
+            font-family: 'BasicCommercial';
+            font-size: 750%;
+            color: black;
+            margin-top: 10%;
+            margin-left: 8%;
+            margin-right: 5%;
+            margin-bottom: 10%;
+            line-height: 0.95em;
+            height: 100vh;
+        }
+
+        div.alt {
+            color: #758184;
+            
+        }
+
+        div.alt:hover {
+            text-decoration: line-through;
+            /* color: black; */
+
+        }
+        
+        div.box {
+            margin-top: 30%;
+            margin-bottom: 20%;
+        }
+
+
+        img.photo {
+            position: relative;
+            width: 60vw;
+            height: auto;
+            margin-left: 10vw;
+        }
+
+        div.textTop {
+            font-family: 'BasicCommercial';
+            font-size: 20px;
+            color: black;
+            position: relative;
+            top: -47vw;
+            left: -45vw;
+            width: 100%;
+            z-index: 1;
+
+            
+            transform: rotate(-90deg);
+        }
+
+        div.textBottom {
+            font-family: 'BasicCommercial';
+            font-size: 150px;
+            color: #181818;
+            position: absolute;
+            margin-top: -90px;
+            text-align: right;
+            /* left: 0; */
+            padding-right: 20vw;
+            width: 100%;
+            z-index: 1;
+        }
+
+        div.contact {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            left: 0px;
+            background-color: #181818;
+        }
+
+        div.contact-info {
+            font-family: "BasicCommercial";
+            position: absolute;
+            bottom: 2vh;
+            left: 5vw;
+            color: #F5F5F5;
+            font-size: 6vw;
+        }
+
+        #lower {
+            margin-top: -30px;
+        }
+
+        #portrait {
+            height: 60vh;
+            width: auto;
+            margin-left: 20vw;
+        }
+
+        
+
+        </style>
+    </head>
+
+
+
+    <body>
+
+
+
+
+        <div class="block" id="nametag">
+            theo azriel, university student
+        </div>
+        
+        <div class = "opening" id="photo1"> hi, i am theo. a computer science student who indulges in photography. <div class="alt" id="to-contact"">contact</div> me if you like to. cheers.</div>
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/coffee.jpg" class = "photo" alt = "coffee" data-rellax-speed="0.7">
+
+            <div class="textBottom" data-rellax-speed="1"> 
+                coffee?
+            </div>
+        </div>
+
+
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/kopi4.jpg" class = "photo" alt = "crosswalk" id= "portrait" data-rellax-speed="0.2">
+
+            <div class="textBottom" data-rellax-speed="1">
+                dolce vita
+            </div>
+        </div>
+
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/k (1 of 1).jpg" class = "photo" alt = "bajo" data-rellax-speed="0.5">
+
+            <div class="textBottom" id = "lower" data-rellax-speed="2">
+                safe
+            </div>
+        </div>
+
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/spill.jpg" class = "photo" alt = "spill" id= "portrait" data-rellax-speed="0.5">
+
+            <div class="textBottom" data-rellax-speed="2">
+                ende
+            </div>
+        </div>
+
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/crosswalk.jpg" class = "photo" alt = "crosswalk" id= "portrait" data-rellax-speed="0.5">
+
+            <div class="textBottom" data-rellax-speed="2">
+                light
+            </div>
+        </div>
+        
+        <div class = "box">
+            <div class = "textTop">
+                theo azriel
+            </div>
+            <img src = "assets/bluehouse.jpg" class = "photo" alt = "bluehouse" id= "portrait" data-rellax-speed="0.2" >
+
+            <div class="textBottom" data-rellax-speed="2">
+                haven
+            </div>
+        </div>
+        
+        <div class="contact" id="contact">
+            <div class="contact-info">
+                feel free to contact me via <a href="https://www.linkedin.com/in/theo-azriel-64230a173/"><div class="alt">linkedin</div></a> or <a href="mailto:tazriel@connect.ust.hk?Subject=Hello" target="_top"><div class="alt">mail</div></a>
+            </div>
+        </div>
+
+
+        
+        <!-- Javascript for BS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- simpleparallax -->
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+
+        <script type="text/javascript">
+            $('#to-contact').on('click', function(e) {
+                e.preventDefault()
+                $('html, body').animate({scrollTop:$('#contact').position().top}, 'slow');
+                })      
+        </script>
+
+        <script>
+            $(document).ready( function() {
+                $("#nametag").hide(); //hide your div initially
+                var topOfOthDiv = $("#photo1").offset().top;
+                $(window).scroll(function() {
+                    if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+                        $("#nametag").show(); //reached the desired point -- show div
+                    }
+                    else{
+                        $("#nametag").hide(); //else above the desired point -- hide div
+                    }
+                });
+            });
+        </script>
+
+        <script src="./js/relax.min.js"></script>
+        <script>
+            var rellax = new Rellax('.textBottom');
+            var rellax = new Rellax('.photo');
+        </script>
+
+    </body>
+
+</html>
