@@ -94,13 +94,13 @@
 
         div.textBottom {
             font-family: 'BasicCommercialLT-Black';
-            font-size: 80px;
+            font-size: 15vw;
             color: black;
             position: absolute;
-            margin-top: 10px;
+            margin-top: -80px;
             text-align: right;
         
-            padding-right: 10vw;
+            padding-right: 13vw;
             width: 100%;
             z-index: 5;
         }
@@ -127,9 +127,9 @@
         }
 
         #portrait {
-            height: 40vh;
-            width: auto;
-            margin-left: 10vw;
+            height: auto;
+            width: 30vw;
+            margin-left: 30vw;
         }
 
         
@@ -144,9 +144,9 @@
 
 
 
-        <a class="block" id="nametag">
+        <div class="block" id="nametag">
             theo azriel, university student
-        </a>
+        </div>
         
         <div class = "opening" id="photo1"> hi, i am theo. a computer science student who indulges in photography. <div class="alt" id="to-contact"">contact</div> me if you like to. cheers.</div>
         <div class = "box">
@@ -248,9 +248,9 @@
                 $("#nametag").hide(); //hide your div initially
                 var topOfOthDiv = $("#photo1").offset().top;
                 $(window).scroll(function() {
-                    $("#nametag").hide();
+                    // $("#nametag").hide();
                     if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-                        $("#nametag").hide();
+                        $('#nametag').css('position','fixed').css('top','60').css('right','60');
                         $("#nametag").show(); //reached the desired point -- show div
                     }
                     else{
@@ -265,6 +265,8 @@
             var rellax = new Rellax('.textBottom');
             var rellax = new Rellax('.photo');
         </script> -->
+
+        
 
     </body>
 
