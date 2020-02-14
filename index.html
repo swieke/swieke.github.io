@@ -5,11 +5,13 @@
 
         <style>
         @font-face {
-            font-family: "BasicCommercial";
-            src:    url("./styles/BasicCommercial_LT_Black.ttf"),
-                    url('./styles/BasicCommercialLTBlack') format('otf'),
-                    url('./styles/BasicCommercial_LT_Black') format('svg'),
-                    url('./BasicCommercialLTBlack.eot');
+            font-family: 'BasicCommercialLT-Black';
+            src: url('./styles/BasicCommercialLT-Black.eot?#iefix') format('embedded-opentype'),
+                 url('./styles/BasicCommercialLT-Black.woff') format('woff'), 
+                 url('./styles/BasicCommercialLT-Black.ttf')  format('truetype'), 
+                 url('./styles/BasicCommercialLT-Black.svg#BasicCommercialLT-Black') format('svg');
+            font-weight: normal;
+            font-style: normal;
         }
 
         html {
@@ -17,6 +19,7 @@
         }
         body {
             background-color: #fafaf6;
+            font-family: "BasicCommercialLT-Black";
         }
 
         a:hover, a:visited, a:link, a:active
@@ -32,7 +35,7 @@
             position: fixed;
             top: 60px;
             right: 60px;
-            font-family: "BasicCommercial";
+            font-family: "BasicCommercialLT-Black";
             font-size: 18px;
             color: #181818;
             z-index: 10;
@@ -40,7 +43,7 @@
         }
         
         div.opening {
-            font-family: 'BasicCommercial';
+            font-family: 'BasicCommercialLT-Black';
             font-size: 750%;
             color: black;
             margin-top: 10%;
@@ -76,7 +79,7 @@
         }
 
         div.textTop {
-            font-family: 'BasicCommercial';
+            font-family: 'BasicCommercialLT-Black';
             font-size: 20px;
             color: black;
             position: relative;
@@ -90,7 +93,7 @@
         }
 
         div.textBottom {
-            font-family: 'BasicCommercial';
+            font-family: 'BasicCommercialLT-Black';
             font-size: 100px;
             color: black;
             position: absolute;
@@ -111,7 +114,7 @@
         }
 
         div.contact-info {
-            font-family: "BasicCommercial";
+            font-family: "BasicCommercialLT-Black";
             position: absolute;
             bottom: 2vh;
             left: 5vw;
