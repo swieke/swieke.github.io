@@ -31,10 +31,15 @@
             text-decoration: line-through;
         }
 
-        a.block {
-            position: fixed;
-            top: 60px;
-            right: 60px;
+        div.block {
+            /* position: -webkit-sticky; Safari */
+            position: sticky;
+            /* position: fixed; */
+            float: right;
+            right: 25px;
+            top: 25px;
+
+
             font-family: "BasicCommercialLT-Black";
             font-size: 18px;
             color: #181818;
@@ -246,11 +251,11 @@
         <script>
             $(document).ready( function() {
                 $("#nametag").hide(); //hide your div initially
-                var topOfOthDiv = $("#photo1").offset().top;
+                var topOfOthDiv = $("#to-contact").offset().top;
                 $(window).scroll(function() {
-                    // $("#nametag").hide();
+                    $("#nametag").hide();
                     if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-                        $('#nametag').css('position','fixed').css('top','60').css('right','60');
+                     
                         $("#nametag").show(); //reached the desired point -- show div
                     }
                     else{
@@ -260,11 +265,11 @@
             });
         </script>
 
-        <!-- <script src="./js/relax.min.js"></script>
+        <script src="./js/relax.min.js"></script>
         <script>
             var rellax = new Rellax('.textBottom');
             var rellax = new Rellax('.photo');
-        </script> -->
+        </script>
 
         
 
