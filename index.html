@@ -265,11 +265,15 @@
             });
         </script> -->
 
-        <!-- <script src="./js/relax.min.js"></script>
+        <script src="./js/relax.min.js"></script>
         <script>
-            var rellax = new Rellax('.textBottom');
-            var rellax = new Rellax('.photo');
-        </script> -->
+
+            if(! (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+                var rellax = new Rellax('.textBottom');
+                var rellax = new Rellax('.photo');
+            // some code..
+            }
+        </script>
 
         
 
